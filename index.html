@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="products.html">
+            <img src="images/logo.png" alt="" width="150px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </nav>
+        <a href="products.html"
+          ><img src="images/cart.png" alt="" width="30px" height="30px"
+        /></a>
+      </div>
+    </div>
+
+
+
+    <div class="small-container">
+      <section class="section">
+        <h2 class="section-title">All Products </h2>
+          <div class="products">
+          <div class="row">
+            <div class="col-4">
+              <img src="images/product-1.jpg" class ="product-image" alt="product-1" />
+              <h4 class="product-name">Red Printed T-shirt</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">50.00</p>
+              <button style="font-size:24px" onclick="changeColor1()" > J'adore <i id="coeur1" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+
+            <div class="col-4 ">
+              <img src="images/product-2.jpg" class ="product-image" alt="product-2" />
+              <h4 class="product-name">Shoes</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">75.00</p>
+              <button style="font-size:24px" onclick="changeColor2()"> J'adore <i id="coeur2" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+
+            <div class="col-4">
+              <img src="images/product-3.jpg" class ="product-image" alt="product-3" />
+              <h4 class="product-name">Black trouser</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p class="product-price">60.00</p>
+              <button style="font-size:24px" onclick="changeColor3()"> J'adore <i id="coeur3" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+            <div class="col-4">
+              <img src="images/product-4.jpg" class ="product-image" alt="product-4" />
+              <h4 class="product-name">blue Printed T-shirt</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">35.00</p>
+              <button style="font-size:24px" onclick="changeColor4(this)"> J'adore <i id="coeur4" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <img src="images/product-5.jpg" class ="product-image" alt="product-5" />
+              <h4 class="product-name">Grey Shoes</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">69.00</p>
+              <button style="font-size:24px" onclick="changeColor5()"> J'adore <i id="coeur5" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+
+            <div class="col-4">
+              <img src="images/product-6.jpg" class ="product-image" alt="product-6" />
+              <h4 class="product-name">Black Printed T-shirt</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">45.00</p>
+              <button style="font-size:24px" onclick="changeColor6()"> J'adore <i id="coeur6" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+
+            <div class="col-4">
+              <img src="images/product-7.jpg" class ="product-image" alt="product-7" />
+              <h4 class="product-name">Socks</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p class="product-price">12.00</p>
+              <button style="font-size:24px" onclick="changeColor7()"> J'adore <i id="coeur7" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+            <div class="col-4">
+              <img src="images/product-8.jpg" class ="product-image" alt="product-8" />
+              <h4 class="product-name">Hand watch FOOSEL</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">132.00</p>
+              <button style="font-size:24px" onclick="changeColor8()"> J'adore <i id="coeur8" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <img src="images/product-9.jpg" class ="product-image" alt="product-9" />
+              <h4 class="product-name">Hand watch Huawei</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">111.00</p>
+              <button style="font-size:24px" onclick="changeColor9()"> J'adore <i id="coeur9" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+
+            <div class="col-4">
+              <img src="images/product-10.jpg" class ="product-image" alt="product-10" />
+              <h4 class="product-name">Sport Shoes X</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">80.00</p>
+              <button style="font-size:24px" onclick="changeColor10()"> J'adore <i id="coeur10" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button>           
+            </div>
+
+            <div class="col-4">
+              <img src="images/product-11.jpg" class ="product-image" alt="product-11" />
+              <h4 class="product-name">Grey Shoes NIKE</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              
+              <p class="product-price">85.00</p>
+              <button style="font-size:24px" onclick="changeColor11()"> J'adore <i id="coeur11" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button> 
+            </div>
+            <div class="col-4">
+              <img src="images/product-12.jpg" class ="product-image" alt="product-12" />
+              <h4 class="product-name">Sport Trouser</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="product-price">55.00</p>
+              <button style="font-size:24px" onclick="changeColor12()"> J'adore <i id="coeur12" class="fa fa-heart"></i></button> <br>
+              <button style="font-size:15px" class="btn btn-primary" data-action="add-to-cart">Add to cart</button> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Cart</h2>
+        <div class="cart">
+
+        </div>
+      </section>
+      
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Download App for Android <br />
+              and ios mobile phone
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.png" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
+              Porro, eum?
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="footer_end">YOU & ME SHOP </p>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
